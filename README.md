@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React setup
+# React-Redux setup
 
-This is a simple yet powerful React boilerplate for later use as a starting point in other projects. It derives from `create-react-app` with a few modifications, which include installing StyleLint, ESLint, and Bootstrap, removing unimportant files, and adding some content to the remaining files.
+This is a simple yet powerful React-Redux boilerplate for later use as a starting point in other projects. It derives from `create-react-app` with a few modifications, which include installing StyleLint, ESLint, and Bootstrap, removing unimportant files, and adding some content to the remaining files. It features a functional Counter component that implements Redux for state management, using `useSelector` and `useDispatch` hooks.
 
 ## Mobile
 
@@ -12,16 +12,21 @@ This is a simple yet powerful React boilerplate for later use as a starting poin
 
 ![screenshot](./app_screenshot-2.png)
 
+## Live Demo
+
+[Live Demo Link](https://dicodiaz.me/react-redux-setup/)
+
 ## Built With
 
 - React
+- Redux
 - Bootstrap
 - VSCode
 - Git & GitHub
 
 ## Getting Started
 
-To get React up and running in another project, follow these simple steps:
+To get React and Redux up and running in another project, follow these simple steps:
 
 1. Clone the repository into your machine (Or download the .zip file and extract).
 2. Open the project's folder.
