@@ -3,7 +3,7 @@ import { decrement, increment } from '../redux/ducks/counter';
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.count);
+  const counter = useSelector((state) => state.counterReducer.count);
   return (
     <div className="row mx-0 text-center">
       <p className="lead mb-1">Count: {counter}</p>
