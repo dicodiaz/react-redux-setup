@@ -1,3 +1,4 @@
+import { Button, Stack } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from '../redux/ducks/counter';
 
@@ -5,25 +6,17 @@ const Counter = () => {
   const dispatch = useDispatch();
   const counter = useSelector((state) => state.counterReducer.count);
   return (
-    <div className="row mx-0 text-center">
-      <p className="lead mb-1">Count: {counter}</p>
-      <div>
-        <button
-          type="button"
-          className="btn btn-primary mx-1"
-          onClick={() => dispatch(increment())}
-        >
+    <Stack gap={2}>
+      <div className="lead text-center">Count: {counter}</div>
+      <Stack direction="horizontal" gap={2} className="justify-content-center">
+        <Button variant="primary" onClick={() => dispatch(increment())}>
           Increment
-        </button>
-        <button
-          type="button"
-          className="btn btn-secondary mx-2"
-          onClick={() => dispatch(decrement())}
-        >
+        </Button>
+        <Button variant="secondary" onClick={() => dispatch(decrement())}>
           Decrement
-        </button>
-      </div>
-    </div>
+        </Button>
+      </Stack>
+    </Stack>
   );
 };
 

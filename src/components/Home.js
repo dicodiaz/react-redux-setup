@@ -1,10 +1,11 @@
+import { Col, Container, Row } from 'react-bootstrap';
 import Counter from './Counter';
 
 const Home = () => (
   <main className="bg-dark text-white min-vh-100 d-flex flex-column justify-content-center">
-    <div className="container-md">
-      <div className="row mx-0 justify-content-center">
-        <div className="col-md-9">
+    <Container fluid="md">
+      <Row className="mx-0 justify-content-center">
+        <Col md={9}>
           <h1 className="display-2 text-center">Hello React-Redux!</h1>
           <p className="lead">
             This project will allow you to set up React and Redux in any other project in seconds.
@@ -14,9 +15,9 @@ const Home = () => (
             <code>npm run build</code> for production build.
           </p>
           <Counter />
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   </main>
 );
 
